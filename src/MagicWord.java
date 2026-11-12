@@ -1,6 +1,6 @@
 public class MagicWord {
     private static final int MAX_FAILS = 10;
-    private static final String[] Words = {"Fernanfloo", "microondas", "ordenador", "ventana", "bogabante", "espagueti", "cebolla", "pimiento", "cucurella", "baitybait", "IlloJuan"};
+    private static final String[] Words = {"fernanfloo", "microondas", "ordenador", "ventana", "bogabante", "espagueti", "cebolla", "pimiento", "cucurella", "baitybait", "illoJuan"};
 
     private String hiddenWord;
     private boolean[] correctLetters;
