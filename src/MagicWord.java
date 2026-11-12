@@ -7,7 +7,7 @@ public class MagicWord {
     private int fails;
 
     public MagicWord () {
-        fails = 0;
+        fails = 1;
         int alea = (int)(Math.random() * Words.length);
         hiddenWord = Words[alea];
         correctLetters = new boolean[hiddenWord.length()];
@@ -23,7 +23,7 @@ public class MagicWord {
             if (correctLetters[i]) {
                 s += hiddenWord.charAt(i);
             } else {
-                s += "-";
+                s += "_";
             }
         }
         return s;
@@ -42,7 +42,7 @@ public class MagicWord {
         return true;
     }
     public boolean looses() {
-        return fails < MAX_FAILS;
+        return fails > MAX_FAILS;
     }
 
     public  void shoot(String wordOrLetter) {
